@@ -285,3 +285,70 @@ namespace application
         }
     }
 }
+
+//problem12
+using System;
+namespace application
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+            int i, sum = 0;
+            Console.Write("Numbers between 100 and 200, divisible by 9 : ");
+            for (i = 101; i < 200; i++)
+            {
+                if (i % 9 == 0)
+                {
+                    Console.Write("{0}  ", i);
+                    sum += i;
+                }
+            }
+            Console.Write("The sum : {0} ", sum);
+
+        }
+    }
+
+}
+
+//problem13
+
+using System;
+namespace application
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+            int i;
+            Console.WriteLine("Enter the numbers");
+            i = Convert.ToInt32(Console.ReadLine());
+            if (i == 0)
+                Console.WriteLine("zero");
+            else if (i % 2 == 0)
+            {
+                Console.WriteLine("even");
+                if (i % 10 == 0)
+                {
+                    Console.WriteLine("multiple of 10");
+                }
+                else
+                {
+                    Console.WriteLine("not a multiple of 10");
+                }
+                if (i > 100)
+                    Console.WriteLine("too large");
+            }
+            else
+            {
+                Console.WriteLine("odd");
+                Console.WriteLine("not a multiple of 10");
+                if (i > 100)
+                    Console.WriteLine("too large");
+            }
+            Console.ReadLine();
+
+        }
+    }
+
+}
