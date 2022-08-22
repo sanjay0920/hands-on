@@ -352,3 +352,68 @@ namespace application
     }
 
 }
+
+//problem14
+
+using System;
+namespace application
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+            int item = 5;
+            switch (item)
+            {
+
+                case 1:
+                    Console.WriteLine("case 1");
+                    break;
+
+                case 5:
+                    Console.WriteLine("case 5");
+                    break;
+
+                case 9:
+                    Console.WriteLine("case 9");
+                    break;
+
+                default:
+                    Console.WriteLine("No match found");
+                    break;
+            }
+        }
+    }
+}
+
+//problem16
+
+using System;
+namespace application
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+            int i;
+            string s;
+            int sum = 100;
+            for (i = 0; i < 4; i++)
+            {
+                s = Console.ReadLine();
+                if (s.Equals("HIT"))
+                {
+                    sum += 10;
+                }
+                else if (s.Equals("MISS"))
+                {
+                    sum -= 20;
+                }
+            }
+            Console.WriteLine(sum);
+            Console.ReadLine();
+        }
+
+
+
+     
